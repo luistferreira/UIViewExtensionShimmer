@@ -19,7 +19,7 @@ class CAShimmerLayer: CAShapeLayer {
     }
 }
 
-extension UIView {
+public extension UIView {
     fileprivate var shimmerLayer: CAShimmerLayer? {
         get {
             return (objc_getAssociatedObject(self, &kAssociatedObjectValue) as? CAShimmerLayer)
@@ -29,7 +29,7 @@ extension UIView {
         }
     }
 
-    func startShimmer() {
+    public func startShimmer() {
         if self.shimmerLayer != nil {
             self.stopShimmer()
         }
@@ -60,7 +60,7 @@ extension UIView {
         self.addShimmerAnimation()
     }
 
-    func addShimmerAnimation() {
+    fileprivate func addShimmerAnimation() {
         self.shimmerLayer?.mask?.removeAnimation(forKey: kUIViewShimmerKey)
 
         let animation = CABasicAnimation(keyPath: "transform.translation.x")
@@ -72,7 +72,7 @@ extension UIView {
         self.shimmerLayer?.mask?.add(animation, forKey: kUIViewShimmerKey)
     }
 
-    func stopShimmer() {
+    public func stopShimmer() {
         self.removeObserver(self, forKeyPath: "bounds")
         self.shimmerLayer?.removeFromSuperlayer()
         self.shimmerLayer = nil
