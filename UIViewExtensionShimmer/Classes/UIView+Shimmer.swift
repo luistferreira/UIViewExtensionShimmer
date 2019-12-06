@@ -30,6 +30,8 @@ public extension UIView {
     }
 
     func startShimmer() {
+        self.stopShimmer()
+
         self.shimmerLayer = CAShimmerLayer()
         self.shimmerLayer?.frame = self.layer.bounds
         self.shimmerLayer?.backgroundColor = kShimmerColor.cgColor
