@@ -1,0 +1,16 @@
+PODS:
+  - UIViewExtensionShimmer (0.1.0)
+
+DEPENDENCIES:
+  - UIViewExtensionShimmer (from `../`)
+
+EXTERNAL SOURCES:
+  UIViewExtensionShimmer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIViewExtensionShimmer: c14420b46699af0ff1efe57f85d44a1941c9f2ec
+
+PODFILE CHECKSUM: f8f9d6dcc15af4bd1f5a10261fd275bada251444
+
+COCOAPODS: 1.8.4

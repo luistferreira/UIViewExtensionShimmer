@@ -1,0 +1,6 @@
+framework module UIViewExtensionShimmer {
+  umbrella header "UIViewExtensionShimmer-umbrella.h"
+
+  export *
+  module * { export * }
+}

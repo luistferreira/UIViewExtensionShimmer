@@ -13,14 +13,14 @@
 
 /* Begin PBXFileReference section */
 		0C97BB2297F74A366B01E6AF /* Pods_UIViewExtensionShimmer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIViewExtensionShimmer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17DD58BC90F615FE3F7A4442 /* UIViewExtensionShimmer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = UIViewExtensionShimmer.podspec; path = ../UIViewExtensionShimmer.podspec; sourceTree = "<group>"; };
+		17DD58BC90F615FE3F7A4442 /* UIViewExtensionShimmer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UIViewExtensionShimmer.podspec; path = ../UIViewExtensionShimmer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4399146FCE57244FF141DE8E /* Pods-UIViewExtensionShimmer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewExtensionShimmer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UIViewExtensionShimmer_Tests/Pods-UIViewExtensionShimmer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		483386EBA824E097DA9A1E41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		483386EBA824E097DA9A1E41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* UIViewExtensionShimmer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewExtensionShimmer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B3362402ECAD0B1EE45F7D87 /* Pods-UIViewExtensionShimmer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewExtensionShimmer_Tests.release.xcconfig"; path = "Target Support Files/Pods-UIViewExtensionShimmer_Tests/Pods-UIViewExtensionShimmer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0777CE0E4F9FA8C67BF326B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F0777CE0E4F9FA8C67BF326B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 				4399146FCE57244FF141DE8E /* Pods-UIViewExtensionShimmer_Tests.debug.xcconfig */,
 				B3362402ECAD0B1EE45F7D87 /* Pods-UIViewExtensionShimmer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
