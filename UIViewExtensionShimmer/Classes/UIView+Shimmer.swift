@@ -29,7 +29,7 @@ public extension UIView {
         }
     }
 
-    public func startShimmer() {
+    func startShimmer() {
         if self.shimmerLayer != nil {
             self.stopShimmer()
         }
@@ -72,13 +72,13 @@ public extension UIView {
         self.shimmerLayer?.mask?.add(animation, forKey: kUIViewShimmerKey)
     }
 
-    public func stopShimmer() {
+    func stopShimmer() {
         self.removeObserver(self, forKeyPath: "bounds")
         self.shimmerLayer?.removeFromSuperlayer()
         self.shimmerLayer = nil
     }
 
-    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard keyPath == "bounds" else {
             return super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
