@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIViewExtensionShimmer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short class to add shimmer effects to any UIView.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   A short class to add shimmer effects to any UIView. Just call start/stopShimmer on any UIView.
                        DESC
 
-  s.homepage         = 'git@github.com:rafaelc0sta/UIViewExtensionShimmer'
+  s.homepage         = 'https://github.com/rafaelc0sta/UIViewExtensionShimmer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Rafael Costa' => 'rafael@rafaelcosta.me' }
-  s.source           = { :git => 'git@github.com:rafaelc0sta/UIViewExtensionShimmer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rafaelc0sta/UIViewExtensionShimmer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ObjectiveCosta'
 
   s.ios.deployment_target = '9.0'
