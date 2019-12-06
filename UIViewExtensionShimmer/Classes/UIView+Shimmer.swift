@@ -30,10 +30,6 @@ public extension UIView {
     }
 
     func startShimmer() {
-        if self.shimmerLayer != nil {
-            self.stopShimmer()
-        }
-
         self.shimmerLayer = CAShimmerLayer()
         self.shimmerLayer?.frame = self.layer.bounds
         self.shimmerLayer?.backgroundColor = kShimmerColor.cgColor
@@ -73,6 +69,10 @@ public extension UIView {
     }
 
     func stopShimmer() {
+        guard let _ = self.shimmerLayer else {
+            return
+        }
+
         self.removeObserver(self, forKeyPath: "bounds")
         self.shimmerLayer?.removeFromSuperlayer()
         self.shimmerLayer = nil
