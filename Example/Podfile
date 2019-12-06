@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UIViewExtensionShimmer_Tests' do
+  pod 'UIViewExtensionShimmer', :path => '../'
+  
+  
+end
