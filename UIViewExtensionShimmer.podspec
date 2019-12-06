@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIViewExtensionShimmer'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short class to add shimmer effects to any UIView.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'UIViewExtensionShimmer/Classes/**/*'
 
-  s.swift_version = 5.0
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'UIViewExtensionShimmer' => ['UIViewExtensionShimmer/Assets/*.png']
